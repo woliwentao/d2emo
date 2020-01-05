@@ -5,7 +5,8 @@ public class AccessTokendto {
     private String client_secret;
     private String code;
     private String redirect_uri;
-    private String state;
+    // private String state;
+    private String grant_type;
 
     /**
      * @return String return the client_id
@@ -64,17 +65,31 @@ public class AccessTokendto {
     }
 
     /**
-     * @return String return the state
+     * // * @return String return the state //
      */
-    public String getState() {
-        return state;
+    // public String getState() {
+    // return state;
+    // }
+
+    // /**
+    // * @param state the state to set
+    // */
+    // public void setState(String state) {
+    // this.state = state;
+    // }
+
+    /**
+     * @return String return the grant_type
+     */
+    public String getGrant_type() {
+        return grant_type;
     }
 
     /**
-     * @param state the state to set
+     * @param grant_type the grant_type to set
      */
-    public void setState(String state) {
-        this.state = state;
+    public void setGrant_type(String grant_type) {
+        this.grant_type = grant_type;
     }
 
 }
